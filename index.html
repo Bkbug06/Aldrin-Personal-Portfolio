@@ -72,7 +72,6 @@ section[id]{scroll-margin-top:90px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .photo-wrap{position:relative}
 .photo{position:relative;aspect-ratio:4/5;border-radius:var(--r-l);overflow:hidden;background:var(--moss-soft)}
-.photo::before{content:"";position:absolute;left:50%;top:44%;width:78%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:2px solid rgba(47,93,74,.18)}
 .photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(transparent,rgba(47,93,74,.10))}
 .photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:bottom center;mix-blend-mode:multiply}
 .photo .initials{position:absolute;inset:0;display:grid;place-items:center;color:var(--moss);font-stretch:70%;font-weight:800;font-size:6rem}
@@ -207,7 +206,7 @@ section[id]{scroll-margin-top:90px}
 <div class="hero-grid">
 <div><p class="hello">Hi, I'm Aldrin.</p><h1>I build the websites your agency <span class="mark">sells.</span></h1><p class="hero-sub">Web designer and WordPress developer with 4+ years and 50+ client sites for US businesses. I work inside your process, follow your brand, and hand off clean builds on time.</p>
 <div class="hero-actions"><a class="btn btn-ink" href="#contact">Hire me</a><a class="btn btn-line" href="#work">See my work</a><a class="btn btn-line" href="https://aldrindapetilla.framer.website/" target="_blank" rel="noopener">View résumé</a></div></div>
-<div class="photo-wrap"><div class="photo"><span class="initials" aria-hidden="true">AJ</span><img src="aldrin-seated.png" alt="Aldrin John Dapetilla" width="465" height="580" fetchpriority="high" onerror="this.remove()"></div>
+<div class="photo-wrap"><div class="photo"><span class="initials" aria-hidden="true">AJ</span<img src="aldrin-seated.png" alt="Aldrin John Dapetilla" width="465" height="580" fetchpriority="high" onload="this.previousElementSibling&&this.previousElementSibling.remove()" onerror="this.remove()"></div>
 <div class="status"><p class="status-row"><span class="dot" aria-hidden="true"></span>Available for new roles</p><p class="status-row"><svg aria-hidden="true"><use href="#clock"/></svg>Works US hours <span>from the Philippines</span></p><p class="status-row"><svg aria-hidden="true"><use href="#reply"/></svg>Replies within 24 hours</p></div></div>
 </div>
 <div class="facts"><div><b>4+</b><span>years designing and building websites</span></div><div><b>50+</b><span>client sites delivered, mostly for US businesses</span></div><div><b>6</b><span>platforms: WordPress, Elementor, Avada, Webflow, Framer, Duda</span></div><div><b>1–3 wks</b><span>typical turnaround for landing pages and redesigns</span></div></div>
