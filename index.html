@@ -183,8 +183,25 @@ section[id]{scroll-margin-top:90px}
 @media (max-width:720px){body{font-size:16px}.main-nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--paper);flex-direction:column;align-items:flex-start;gap:12px;padding:20px 24px 28px;border-bottom:1px solid var(--line)}.main-nav.open{display:flex}.main-nav a:not(.btn){display:block;width:100%;padding:10px 0;font-size:1.05rem}.main-nav a.is-active:not(.btn)::after{bottom:4px;right:auto;width:28px}.main-nav .btn{width:100%}.nav-toggle{display:inline-block}.brand-name small{display:none}.hero{padding:40px 0 48px}.status{position:relative;left:0;right:0;bottom:0;margin:-40px 16px 0}.work-grid,.skill-grid,.fit-list{grid-template-columns:1fr}.project.wide{grid-column:auto}.project.wide .shot-img{aspect-ratio:16/10}.skill-col,.skill-col + .skill-col{padding:24px 0 6px;border-left:0}.skill-col + .skill-col{border-top:1px solid var(--line)}.steps li{grid-template-columns:1fr;gap:8px}.steps li > div,.steps li > p{grid-column:auto}.form-row{grid-template-columns:1fr}.fit-box{padding:30px 24px}.work,.skills,.process,.about,.contact{padding:72px 0}.fit{padding:0 0 72px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
+<!-- Loading screen (3 seconds) -->
+<style>
+.loader{position:fixed;inset:0;z-index:9999;background:var(--ink);display:grid;place-items:center;animation:loader-out .5s ease 3s forwards}
+.loader-inner{display:grid;justify-items:center;gap:22px;padding:0 24px;text-align:center}
+.loader-mark{width:72px;height:72px;border-radius:18px;background:var(--amber);color:var(--ink);display:grid;place-items:center;font-family:var(--font);font-weight:800;font-stretch:80%;font-size:1.7rem;animation:loader-pulse 1.2s ease-in-out infinite}
+.loader-name{color:#fff;font-family:var(--font);font-weight:700;font-stretch:80%;font-size:1.15rem}
+.loader-role{display:block;margin-top:2px;color:#A9B4C2;font-weight:500;font-stretch:100%;font-size:.85rem}
+.loader-bar{width:180px;height:4px;border-radius:4px;background:rgba(255,255,255,.14);overflow:hidden}
+.loader-bar span{display:block;width:100%;height:100%;background:var(--amber);transform-origin:left;transform:scaleX(0);animation:loader-fill 3s linear forwards}
+@keyframes loader-fill{to{transform:scaleX(1)}}
+@keyframes loader-pulse{50%{transform:scale(.92)}}
+@keyframes loader-out{to{opacity:0;visibility:hidden}}
+html.is-loading,html.is-loading body{overflow:hidden}
+@media (prefers-reduced-motion:reduce){.loader-mark{animation:none}}
+</style>
 </head>
 <body>
+<div class="loader" id="loader" role="status" aria-label="Loading"><div class="loader-inner"><span class="loader-mark" aria-hidden="true">AJ</span><span class="loader-name">Aldrin John Dapetilla<span class="loader-role">Web Designer and WordPress Developer</span></span><span class="loader-bar" aria-hidden="true"><span></span></span></div></div>
+<script>document.documentElement.classList.add('is-loading');setTimeout(function(){document.documentElement.classList.remove('is-loading');var l=document.getElementById('loader');if(l)l.remove();},3500);</script>
 <a class="skip" href="#main">Skip to content</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="out" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
