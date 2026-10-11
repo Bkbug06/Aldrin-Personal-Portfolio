@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aldrin John Dapetilla | Web Designer & WordPress Developer for Agencies</title>
 <meta name="description" content="Web designer and WordPress developer with 4+ years and 50+ client sites for US businesses. White-label ready, works US hours, and delivers clean builds in WordPress, Webflow and Framer.">
-<link rel="canonical" href="https://aldrin-dapetilla.netlify.app/">
+<link rel="canonical" href="https://aldrin-hire-now.vercel.app/">
 <meta name="theme-color" content="#1C2430">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Aldrin John Dapetilla | Web Designer for Agencies">
 <meta property="og:description" content="I build the websites your agency sells. WordPress, Webflow, Framer and Figma, delivered under your brand.">
-<meta property="og:url" content="https://aldrin-dapetilla.netlify.app/">
-<meta property="og:image" content="https://aldrin-dapetilla.netlify.app/aldrin-headshot.png">
+<meta property="og:url" content="https://aldrin-hire-now.vercel.app/">
+<meta property="og:image" content="https://aldrin-hire-now.vercel.app/aldrin-headshot.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C2430'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Arial' font-weight='700' font-size='14' fill='%23F5B83D'%3EAJ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 <link rel="preload" as="image" href="aldrin-seated.png">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Aldrin John Dapetilla","jobTitle":"Web Designer and WordPress Developer","url":"https://aldrin-dapetilla.netlify.app/","image":"https://aldrin-dapetilla.netlify.app/aldrin-headshot.png","email":"ajmdapetilla.06@gmail.com","address":{"@type":"PostalAddress","addressCountry":"PH"},"knowsAbout":["Web design","WordPress","Elementor","Avada","Webflow","Framer","Duda","Figma","Local SEO","AI automation"],"sameAs":["https://www.linkedin.com/in/aldrin-john-dapetilla-182838331/","https://aldrindapetilla.framer.website/"]}
+{"@context":"https://schema.org","@type":"Person","name":"Aldrin John Dapetilla","jobTitle":"Web Designer and WordPress Developer","url":"https://aldrin-hire-now.vercel.app/","image":"https://aldrin-hire-now.vercel.app/aldrin-headshot.png","email":"ajmdapetilla.06@gmail.com","address":{"@type":"PostalAddress","addressCountry":"PH"},"knowsAbout":["Web design","WordPress","Elementor","Avada","Webflow","Framer","Duda","Figma","Local SEO","AI automation"],"sameAs":["https://www.linkedin.com/in/aldrin-john-dapetilla-182838331/","https://aldrindapetilla.framer.website/"]}
 </script>
 <style>
 :root{--paper:#F6F7F4;--white:#FFFFFF;--ink:#1C2430;--ink-2:#3B4656;--muted:#667085;--line:#E2E5E9;--amber:#F5B83D;--amber-soft:#FDF1D6;--moss:#2F5D4A;--moss-soft:#E3EEE8;--r-s:10px;--r-m:16px;--r-l:24px;--wrap:1180px;--font:'Archivo',system-ui,-apple-system,sans-serif}
@@ -72,9 +72,10 @@ section[id]{scroll-margin-top:90px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .photo-wrap{position:relative}
 .photo{position:relative;aspect-ratio:4/5;border-radius:var(--r-l);overflow:hidden;background:var(--moss-soft)}
-.photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(transparent,rgba(47,93,74,.10))}
+.photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(transparent,rgba(47,93,74,.10));pointer-events:none}
 .photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:bottom center;mix-blend-mode:multiply}
 .photo .initials{position:absolute;inset:0;display:grid;place-items:center;color:var(--moss);font-stretch:70%;font-weight:800;font-size:6rem}
+.photo:has(img) .initials{display:none}
 .status{position:absolute;left:-36px;bottom:-28px;z-index:2;background:var(--white);border:1px solid var(--line);border-radius:var(--r-m);padding:18px 20px;box-shadow:0 24px 50px -20px rgba(28,36,48,.35);display:grid;gap:10px;min-width:250px}
 .status-row{display:flex;align-items:center;gap:10px;font-size:.93rem;font-weight:600}
 .status-row span{color:var(--muted);font-weight:500}
@@ -206,7 +207,7 @@ section[id]{scroll-margin-top:90px}
 <div class="hero-grid">
 <div><p class="hello">Hi, I'm Aldrin.</p><h1>I build the websites your agency <span class="mark">sells.</span></h1><p class="hero-sub">Web designer and WordPress developer with 4+ years and 50+ client sites for US businesses. I work inside your process, follow your brand, and hand off clean builds on time.</p>
 <div class="hero-actions"><a class="btn btn-ink" href="#contact">Hire me</a><a class="btn btn-line" href="#work">See my work</a><a class="btn btn-line" href="https://aldrindapetilla.framer.website/" target="_blank" rel="noopener">View résumé</a></div></div>
-<div class="photo-wrap"><div class="photo"><span class="initials" aria-hidden="true">AJ</span<img src="aldrin-seated.png" alt="Aldrin John Dapetilla" width="465" height="580" fetchpriority="high" onload="this.previousElementSibling&&this.previousElementSibling.remove()" onerror="this.remove()"></div>
+<div class="photo-wrap"><div class="photo"><span class="initials" aria-hidden="true">AJ</span><img src="aldrin-seated.png" alt="Aldrin John Dapetilla" width="465" height="580" fetchpriority="high" onerror="this.remove()"></div>
 <div class="status"><p class="status-row"><span class="dot" aria-hidden="true"></span>Available for new roles</p><p class="status-row"><svg aria-hidden="true"><use href="#clock"/></svg>Works US hours <span>from the Philippines</span></p><p class="status-row"><svg aria-hidden="true"><use href="#reply"/></svg>Replies within 24 hours</p></div></div>
 </div>
 <div class="facts"><div><b>4+</b><span>years designing and building websites</span></div><div><b>50+</b><span>client sites delivered, mostly for US businesses</span></div><div><b>6</b><span>platforms: WordPress, Elementor, Avada, Webflow, Framer, Duda</span></div><div><b>1–3 wks</b><span>typical turnaround for landing pages and redesigns</span></div></div>
